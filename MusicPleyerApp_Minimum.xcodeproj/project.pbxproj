@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,8 @@
 		3BDB396724EE5B2F000F8FD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDB396524EE5B2F000F8FD8 /* Main.storyboard */; };
 		3BDB396924EE5B32000F8FD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BDB396824EE5B32000F8FD8 /* Assets.xcassets */; };
 		3BDB396C24EE5B32000F8FD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BDB396A24EE5B32000F8FD8 /* LaunchScreen.storyboard */; };
+		3BDB397724EE6814000F8FD8 /* file.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3BDB397624EE6814000F8FD8 /* file.mp3 */; };
+		B7FEFE10C1F93E15182FC3B2 /* Pods_MusicPleyerApp_Minimum.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3BCA5DD94D11F8D3F7D28E /* Pods_MusicPleyerApp_Minimum.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		3BDB396824EE5B32000F8FD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BDB396B24EE5B32000F8FD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BDB396D24EE5B32000F8FD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BDB397624EE6814000F8FD8 /* file.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = file.mp3; sourceTree = "<group>"; };
+		3E17BE8FDC3DEF9973C3D056 /* Pods-MusicPleyerApp_Minimum.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPleyerApp_Minimum.debug.xcconfig"; path = "Target Support Files/Pods-MusicPleyerApp_Minimum/Pods-MusicPleyerApp_Minimum.debug.xcconfig"; sourceTree = "<group>"; };
+		9E3BCA5DD94D11F8D3F7D28E /* Pods_MusicPleyerApp_Minimum.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MusicPleyerApp_Minimum.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C36EF4BE9D1579385ED78A3D /* Pods-MusicPleyerApp_Minimum.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MusicPleyerApp_Minimum.release.xcconfig"; path = "Target Support Files/Pods-MusicPleyerApp_Minimum/Pods-MusicPleyerApp_Minimum.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7FEFE10C1F93E15182FC3B2 /* Pods_MusicPleyerApp_Minimum.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1903EE3643A3C7C6FE587085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E3BCA5DD94D11F8D3F7D28E /* Pods_MusicPleyerApp_Minimum.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3BDB395324EE5B2F000F8FD8 = {
 			isa = PBXGroup;
 			children = (
 				3BDB395E24EE5B2F000F8FD8 /* MusicPleyerApp_Minimum */,
 				3BDB395D24EE5B2F000F8FD8 /* Products */,
+				ED30D4D3595F368C78B0BC10 /* Pods */,
+				1903EE3643A3C7C6FE587085 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,7 @@
 		3BDB395E24EE5B2F000F8FD8 /* MusicPleyerApp_Minimum */ = {
 			isa = PBXGroup;
 			children = (
+				3BDB397624EE6814000F8FD8 /* file.mp3 */,
 				3BDB395F24EE5B2F000F8FD8 /* AppDelegate.swift */,
 				3BDB396124EE5B2F000F8FD8 /* SceneDelegate.swift */,
 				3BDB396324EE5B2F000F8FD8 /* ViewController.swift */,
@@ -67,6 +85,15 @@
 			path = MusicPleyerApp_Minimum;
 			sourceTree = "<group>";
 		};
+		ED30D4D3595F368C78B0BC10 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E17BE8FDC3DEF9973C3D056 /* Pods-MusicPleyerApp_Minimum.debug.xcconfig */,
+				C36EF4BE9D1579385ED78A3D /* Pods-MusicPleyerApp_Minimum.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BDB397024EE5B32000F8FD8 /* Build configuration list for PBXNativeTarget "MusicPleyerApp_Minimum" */;
 			buildPhases = (
+				20A5FBDCD571BB7C23486553 /* [CP] Check Pods Manifest.lock */,
 				3BDB395824EE5B2F000F8FD8 /* Sources */,
 				3BDB395924EE5B2F000F8FD8 /* Frameworks */,
 				3BDB395A24EE5B2F000F8FD8 /* Resources */,
+				490F9822A5E65F1F332C2DB6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +156,54 @@
 			files = (
 				3BDB396C24EE5B32000F8FD8 /* LaunchScreen.storyboard in Resources */,
 				3BDB396924EE5B32000F8FD8 /* Assets.xcassets in Resources */,
+				3BDB397724EE6814000F8FD8 /* file.mp3 in Resources */,
 				3BDB396724EE5B2F000F8FD8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		20A5FBDCD571BB7C23486553 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MusicPleyerApp_Minimum-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		490F9822A5E65F1F332C2DB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicPleyerApp_Minimum/Pods-MusicPleyerApp_Minimum-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MusicPleyerApp_Minimum/Pods-MusicPleyerApp_Minimum-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MusicPleyerApp_Minimum/Pods-MusicPleyerApp_Minimum-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3BDB395824EE5B2F000F8FD8 /* Sources */ = {
@@ -282,6 +354,7 @@
 		};
 		3BDB397124EE5B32000F8FD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E17BE8FDC3DEF9973C3D056 /* Pods-MusicPleyerApp_Minimum.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +372,7 @@
 		};
 		3BDB397224EE5B32000F8FD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C36EF4BE9D1579385ED78A3D /* Pods-MusicPleyerApp_Minimum.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
